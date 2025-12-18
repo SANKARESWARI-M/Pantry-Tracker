@@ -1,0 +1,123 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+    body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    background-image:
+    url('https://png.pngtree.com/background/20230528/original/pngtree-large-kitchenpantry-with-lots-of-jars-and-containers-picture-image_2782207.jpg');
+    /*background-repeat: no-repeat;*/
+    background-position: center;
+    background-size: cover;
+    }
+    h1 {
+    font-size: 36px;
+    color: #2c3e50;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    }
+    /* Shopping List Section */
+    #shopping-list {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    width: 60%;
+    text-align: center;
+    position: relative;
+    }
+    /* Back Button - Positioned Left */
+    #backtodash {
+    padding: 12px 25px;
+    background: linear-gradient(135deg, #ec6b4b, #feb47b);
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    }
+    #backtodash:hover {
+    background: linear-gradient(135deg, #feb47b, #ff7e5f);
+    }
+    /* Grouping Create and Generate List Buttons */
+    #options {
+    display: flex;
+    justify-content: center; /* Center the buttons */
+    gap: 20px; /* Space between the buttons */
+    margin-top: 50px; /* Space between title and buttons */
+    }
+    #options button {
+    padding: 15px 40px;
+    background: linear-gradient(135deg, #ec6b4b, #feb47b);
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 500;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    text-transform: uppercase;
+    min-width: 180px; /* Ensure button sizes are consistent */
+    }
+    #options button:hover {
+    background: linear-gradient(135deg, #feb47b, #ff7e5f);
+    transform: translateY(-2px); /* Button lift effect */
+    }
+    #options button:focus {
+    outline: none;
+    }
+    /* Section for Generated List */
+    #generate-list-section {
+    display: none;
+    }
+    #generate-list-section h2 {
+    font-size: 28px;
+    color: #2c3e50;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    }
+    #generated-items {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 6px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    font-size: 16px;
+    color: #333;
+    max-height: 300px;
+    overflow-y: auto; /* Makes the list scrollable */
+    }
+    /* Responsive Design */
+    @media (max-width: 768px) {
+    body {
+    padding: 15px;
+    }
+    #shopping-list {
+    width: 100%;
+    padding: 25px;
+    }
+    #options button {
+    width: 100%;
+    padding: 12px;
+    font-size: 14px;
+    }
+    #backtodash {
+    width: 100%;
+    }
+    }
+    

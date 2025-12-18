@@ -1,0 +1,159 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+    body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f9; /* Light background for a modern feel */
+    color: #333;
+    padding: 20px;
+    background-image:
+    url('https://i.pinimg.com/736x/20/43/d8/2043d8672ba25c9bbcde752d8aad88b0.jpg');
+    }
+    #pantry{
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    max-width: 900px;
+    margin: 0 auto;
+    }
+    /* Header Styling */
+    header {
+    text-align: center;
+    margin-bottom: 30px;
+    }
+    h1 {
+    font-size: 38px;
+    color: #2c3e50;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    }
+    /* Button Styling */
+    button {
+    padding: 12px 25px;
+    background: linear-gradient(135deg, #ec6b4b, #feb47b);
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 500;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    display: inline-block;
+    margin: 0 10px;
+    }
+    button:hover {
+    background: linear-gradient(135deg, #feb47b, #ff7e5f);
+    transform: translateY(-2px); /* Button lift effect on hover */
+    }
+    button:focus {
+    outline: none;
+    }
+    /* Form Styling */
+    form {
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    margin: 20px auto;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    }
+    form input {
+    padding: 12px;
+    margin: 10px 0;
+    font-size: 16px;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+    transition: border-color 0.3s ease;
+    }
+    form input:focus {
+    border-color: #3498db;
+    outline: none;
+    }
+    form button[type="submit"],
+    form button[type="button"] {
+    margin-top: 15px;
+    }
+    form button[type="submit"]:hover,
+    form button[type="button"]:hover {
+    background-color: #2980b9;
+    }
+    /* Hidden Class for Forms */
+    .hidden {
+    display: none;
+    }
+    /* Pantry List Table */
+    table {
+    width: 80%;
+    margin: 40px auto;
+    border-collapse: collapse;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); /* Stronger shadow for a more
+    elevated look */
+    border-radius: 8px; /* Rounded corners for a modern aesthetic */
+    }
+    table, th, td {
+    border: 1px solid #ddd;
+    }
+    th, td {
+    padding: 15px;
+    text-align: left;
+    }
+    th {
+    background: linear-gradient(135deg, #ec6b4b, #feb47b);
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    }
+    td {
+    background-color: #ffffff;
+    font-size: 16px;
+    color: #555;
+    }
+    td button {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    }
+    td button:hover {
+    background-color: #c0392b;
+    transform: translateY(-2px); /* Hover effect to make buttons appear interactive
+    */
+    }
+    td button:focus {
+    outline: none;
+    }
+    /* Responsive Design */
+    @media (max-width: 768px) {
+    body {
+    padding: 10px;
+    }
+    form {
+    width: 100%;
+    padding: 20px;
+    }
+    button {
+    width: 100%;
+    }
+    table {
+    width: 100%; /* Table width adjusts to 100% */
+    font-size: 14px;
+    }
+    th, td {
+    padding: 10px;
+    }
+    td button {
+    width: 100%;
+    }
+    }
+    

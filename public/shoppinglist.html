@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shopping List</title>
+<link rel="stylesheet" href="shoppingList.css"> <!-- Ensure the correct path
+here -->
+</head>
+<body>
+<div id="shopping-list">
+<h1>Shopping List</h1>
+<!-- Navigation back to dashboard -->
+<button id="backtodash">Back</button>
+<!-- Create or Generate shopping list options -->
+<div id="options">
+<!-- Grouped buttons for Create and Generate List -->
+<button id="create-list-btn">Create Shopping List</button>
+<button id="generate-list-btn">Generate Shopping List</button>
+</div>
+<!-- Section for generated shopping list -->
+<div id="generate-list-section" class="hidden">
+<h2>Generated Shopping List</h2>
+<div id="generated-items"></div>
+</div>
+</div>
+<!-- Make sure the JavaScript is loaded at the end of the body -->
+<script type="module" src="shoppingList.js" defer></script>
+</body>
+</html>

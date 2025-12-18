@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pantry Tracker</title>
+  <link rel="stylesheet" href="pantry.css">
+</head>
+<body>
+  <div id="pantry">
+    <header>
+      <h1>Pantry Tracker</h1>
+    </header>
+    <main>
+      <button id="backtodash">Back</button>
+      <button id="add-item-button">Add Item</button>
+      <button id="delete-item-button">Delete Item</button>
+      <button id="update-item-button">Update Item</button>
+
+      <!-- Add Item Form -->
+      <form id="add-item-form" class="hidden">
+        <input type="text" id="item-id" placeholder="Item ID" required>
+        <input type="text" id="item-name" placeholder="Item Name" required>
+        <input type="number" id="item-quantity" placeholder="Quantity" required>
+        <input type="date" id="expiration-date" required>
+        <button type="submit">Add Item</button>
+        <button id="cancel-button" type="button">Cancel</button>
+      </form>
+
+      <!-- Delete Item Form -->
+      <form id="delete-item-form" class="hidden">
+        <input type="text" id="item-id-to-delete" placeholder="Item ID to Delete" required>
+        <button type="submit">Delete Item</button>
+        <button id="delcancel-button" type="button">Cancel</button>
+      </form>
+
+      <!-- Update Item Form -->
+      <form id="update-item-form" class="hidden">
+        <input type="text" id="item-id-to-update" placeholder="Item ID (for update)" required>
+        <input type="number" id="updated-quantity" placeholder="Updated Quantity">
+        <input type="date" id="updated-expiration-date" placeholder="Updated Expiration Date">
+        <button type="submit">Update Item</button>
+        <button id="update-cancel-button" type="button">Cancel</button>
+      </form>
+
+      <!-- Pantry List Table -->
+      <table id="pantry-list">
+        <thead>
+          <tr>
+            <th>Item Id</th>
+            <th>Item Name</th>
+            <th>Quantity</th>
+            <th>Expiration Date</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Pantry items will be dynamically added here -->
+        </tbody>
+      </table>
+    </main>
+    <div id="overlay"></div>
+  </div>
+  <script type="module" src="pantry.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const expirationDateInput = document.getElementById("expiration-date");
+      const expirationDateInputUpdate = document.getElementById("updated-expiration-date");
+      const today = new Date().toISOString().split("T")[0]; 
+      
+      // Set the min attribute to today's date for both inputs
+      expirationDateInput.setAttribute("min", today);
+      expirationDateInputUpdate.setAttribute("min", today);
+    });
+  </script>
+</body>
+</html>

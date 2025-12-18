@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pantry Tracker</title>
+<link rel="stylesheet" href="index.css">
+</head>
+<body>
+<div class="container">
+<h1>Pantry Tracker</h1>
+<!-- Buttons to login or register -->
+<div class="buttons" id="buttonContainer">
+  <button id="loginBtn">Login</button>
+  <button id="registerBtn">Register</button>
+</div>
+
+<!-- Login/Register form, initially hidden -->
+<div class="auth-container" id="authContainer" style="display:none;">
+  <form id="authForm">
+    <h2 id="formTitle">Login</h2>
+    <label for="email">Email</label>
+    <input type="email" id="email" placeholder="Email" required>
+    <label for="password">Password</label>
+    <input type="password" id="password" placeholder="Password" required>
+    <button type="submit" id="submitBtn">Login</button> <!-- Button text will change dynamically -->
+    <!-- Cancel Button -->
+    <button type="button" id="cancelBtn">Cancel</button>
+    <p id="toggleText">Don't have an account? <span id="toggleForm">Register</span></p>
+    <div id="googleSignInBtn" class="google-btn">
+      <img src="https://image.similarpng.com/verythumbnail/2020/06/Logo-google-icon-PNG.png" alt="Google Logo" class="google-logo">
+      <span>Sign in with Google</span>
+    </div>
+  </form>
+</div>
+</div>
+
+<div id="mainMenu" style="display: none;">
+  <button id="myPantryBtn">My Pantry</button>
+  <button id="shoppingListBtn">Shopping List</button>
+  <button id="recipeBtn">Recipe Suggestions</button>
+</div>
+
+<!-- Firebase Authentication Script -->
+<script type="module">
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/9.0.0/firebase-app.js";
+  import { getAuth, createUserWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/9.0.0/firebase-auth.js";
+  import { getFirestore, doc, setDoc } from "https://www.gstatic.com/firebasejs/9.0.0/firebase-firestore.js";
+
+  // ✅ Added firebaseConfig and initialization
+  const firebaseConfig = {
+  apiKey: "AIzaSyAoO5ndmgp6dYUewLaIBhPpmpu1het72C4",
+  authDomain: "pantry-tracker-4c64e.firebaseapp.com",
+  projectId: "pantry-tracker-4c64e",
+  storageBucket: "pantry-tracker-4c64e.firebasestorage.app",
+  messagingSenderId: "356408623064",
+  appId: "1:356408623064:web:ec64ba276dea98981d3cad",
+  measurementId: "G-N3GEY9CF7T"
+};
+
+  const app = initializeApp(firebaseConfig);
+  const auth = getAuth(app); // ✅ fixed: added `app` to getAuth()
+  const db = getFirestore(app);
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pantry Tracker</title>
+<link rel="stylesheet" href="index.css">
+</head>
+<body>
+<div class="container">
+<h1>Pantry Tracker</h1>
+
+
+<div class="buttons" id="buttonContainer">
+<button id="loginBtn">Login</button>
+<button id="registerBtn">Register</button>
+</div>
+
+
+<div class="auth-container" id="authContainer" style="display:none;">
+<form id="authForm">
+<h2 id="formTitle">Login</h2>
+<label for="email">Email</label>
+<input type="email" id="email" placeholder="Email" required>
+<label for="password">Password</label>
+<input type="password" id="password" placeholder="Password"
+required>
+<button type="submit" id="submitBtn">Login</button> 
+
+
+
+<button type="button" id="cancelBtn">Cancel</button>
+<p id="toggleText">Don't have an account? <span
+id="toggleForm">Register</span></p>
+<div id="googleSignInBtn" class="google-btn">
+<img src=https://image.similarpng.com/verythumbnail/2020/06/Logo-google-icon-PNG.png alt="Google Logo" class="google-logo">
+<span>Sign in with Google</span>
+</div>
+</form>
+</div>
+</div>
+<div id="mainMenu" style="display: none;">
+<button id="myPantryBtn">My Pantry</button>
+<button id="shoppingListBtn">Shopping List</button>
+<button id="recipeBtn">Recipe Suggestions</button>
+</div>
+
+
+<div id="authContainer" style="display:none;">
+<h2 id="formTitle">Login</h2>
+<form id="authForm">
+<input type="email" id="email" placeholder="Email" required />
+<input type="password" id="password" placeholder="Password" required />
+<button type="submit" id="submitBtn">Login</button>
+</form>
+<div id="toggleText"></div>
+<button id="cancelBtn">Cancel</button>
+</div>
+
+<script type="module">
+import { initializeApp } from
+"https://www.gstatic.com/firebasejs/9.0.0/firebase-app.js";
+import { getAuth, createUserWithEmailAndPassword } from
+"https://www.gstatic.com/firebasejs/9.0.0/firebase-auth.js";
+import { getFirestore, doc, setDoc } from
+"https://www.gstatic.com/firebasejs/9.0.0/firebase-firestore.js";
+</script>
+</body>
+</html> -->

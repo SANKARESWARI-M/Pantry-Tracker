@@ -1,0 +1,158 @@
+/* General Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f7f7f7;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+    background-image:
+    url('https://i.pinimg.com/736x/46/c0/6c/46c06c35061ca2d0ff589d5e281f5c30.jpg');
+    }
+    /* Container for Pantry List */
+    #pantry-list {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    max-width: 900px;
+    margin: 0 auto;
+    }
+    /* Header Styling */
+    h1 {
+    font-size: 28px;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+    }
+    /* Button Styling */
+    #backtodash,#toadd {
+    background: linear-gradient(135deg, #ec6b4b, #feb47b);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    display: inline-block;
+    margin: 20px 0;
+    transition: background-color 0.3s ease;
+    }
+    #backtodash:hover,#toadd:hover {
+    background: linear-gradient(135deg, #feb47b, #ff7e5f);
+    }
+    /* Table Styling */
+    table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    }
+    th, td {
+    padding: 12px 18px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    }
+    th {
+    background: linear-gradient(135deg, #ec6b4b, #feb47b);
+    color: white;
+    font-size: 16px;
+    }
+    td {
+    font-size: 14px;
+    }
+    tr:nth-child(even) {
+    background-color: #f2f2f2;
+    }
+    tr:hover {
+    background-color: #e1e1e1;
+    }
+    /* No items message */
+    td[colspan="3"] {
+    text-align: center;
+    font-style: italic;
+    color: #888;
+    }
+    .decrement-btn {
+    background-color: #ff4c3f; /* Red color */
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 20px;
+    font-weight: bold;
+    }
+    .decrement-btn:hover {
+    background-color: #d32f2f; /* Darker red when hovered */
+    }
+    #notification-button {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #e6d814; /* Green background */
+    color: white;
+    padding: 12px 18px; /* Slightly adjusted padding for better balance */
+    border: none;
+    border-radius: 50%; /* Circular button */
+    font-size: 24px; /* Larger font size for the icon */
+    cursor: pointer;
+    z-index: 1000; /* Ensure it's above other content */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth
+    transitions */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow for better depth
+    */
+    }
+    #notification-button:hover {
+    background-color: #a9f31f; /* Lighter shade for hover effect */
+    transform: scale(1.1); /* Slightly enlarge the button on hover */
+    }
+    #notification-button i {
+    font-size: 24px; /* Ensure the icon is proportionate to the button */
+    transition: transform 0.3s ease; /* Smooth icon transformation */
+    }
+    #notification-button:hover i {
+    transform: rotate(180deg); /* Rotate the icon on hover for added interaction
+    */
+    }
+    #notification-container {
+    position: fixed;
+    top: 60px; /* Position below the notification button */
+    right: 20px; /* Align with the button */
+    background-color: #f44336; /* Red background for notifications */
+    color: white;
+    padding: 15px 20px; /* Adjust padding for better spacing */
+    border-radius: 8px; /* Slightly more rounded corners */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); /* Enhanced shadow for a modern
+    look */
+    width: 320px; /* Slightly wider container for better content fitting */
+    opacity: 0;
+    visibility: hidden; /* Initially hidden */
+    transition: opacity 0.4s, visibility 0.4s ease-in-out; /* Smoother appearance
+    */
+    z-index: 999; /* Ensures notification stays on top */
+    }
+    #notification-container.show {
+    opacity: 1;
+    opacity: 1;
+    visibility: visible;
+    }
+    #notification-message {
+    font-size: 16px; /* Slightly larger font for better readability */
+    line-height: 1.4;
+    font-weight: bold;
+    }
+    #notification-badge {
+    position: absolute;
+    top: -4px;
+    right: -4px;
+    background-color: #ff0000; /* Red background for the badge */
+    color: white;
+    padding: 8px 10px; /* Slightly larger padding for better badge visibility */
+    border-radius: 50%;
+    font-size: 14px; /* Bigger font size for better readability */
+    font-weight: bold;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2); /* Soft shadow for the badge */
+    }
+    

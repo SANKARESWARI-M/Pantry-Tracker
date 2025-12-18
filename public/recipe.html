@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Recipe</title>
+<link rel="stylesheet" href="recipe.css">
+</head>
+<body>
+<div id="recipe">
+<h1>Recipe Maker</h1>
+<button id="back">Back</button>
+<h2>Select the ingredients</h2>
+<div id="ingredientSelection"></div>
+<div>
+<h2>What type of meal it is?</h2>
+<select id="mealType">
+<option value="breakfast">breakfast</option>
+<option value="Lunch">Lunch</option>
+<option value="dinner">dinner</option>
+<option value="snack">snack</option>
+</select>
+</div>
+<div>
+<h2>What cuisine style do you want ?</h2>
+<input type="text" id="cuisineType" placeholder="Enter cuisine style">
+</div>
+<button id="generateButton">Generate Recipe</button>
+<h2>Suggested Recipe:</h2>
+<div id="recipeContainer"></div>
+</div>
+<script type="module" src ="recipe.js" defer></script>
+</body>
+</html>

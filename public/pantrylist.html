@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pantry List</title>
+<link rel="stylesheet" href="pantrylist.css"> <!-- Ensure the correct path
+here -->
+</head>
+<body>
+<div id="pantry-list">
+<h1>Pantry List</h1>
+<!-- Navigation back to shopping list -->
+<button id="backtodash">Back</button>
+<!-- Display Pantry Items in a Table -->
+<h2>Items in Pantry</h2>
+<table id="pantry-items-table">
+<thead>
+<tr>
+<th>Item Name</th>
+<th>Quantity</th>
+<th>Unit</th>
+<th>Action</th> <!-- Add an Action column for the button -->
+</tr>
+</thead>
+<tbody id="pantry-items-list">
+<!-- Pantry items will be dynamically added here -->
+</tbody>
+</table>
+<!-- Option to add more items -->
+<button id="toadd">Add New Item</button>
+</div>
+<button id="notification-button">
+<i class="fas fa-bell"></i>
+<span id="notification-badge" class="badge">!</span> <!-- Badge for
+unread notifications -->
+<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960
+960" width="24px" fill="#000000"><path d="M80-560q0-100 44.5-183.5T244-882l47
+64q-60 44-95.5 111T160-560H80Zm720 0q0-80-35.5-147T669-818l47-64q75 55 119.5
+138.5T880-560h-80ZM160-200v-80h80v-280q0-83 50-147.5T420-792v-28q0-25 17.5-
+42.5T480-880q25 0 42.5 17.5T540-820v28q80 20 130 84.5T720-560v280h80v80H160Zm320-
+300Zm0 420q-33 0-56.5-23.5T400-160h160q0 33-23.5 56.5T480-80ZM320-280h320v-280q0-
+66-47-113t-113-47q-66 0-113 47t-47 113v280Z"/></svg>
+</button>
+<div id="notification-container">
+<p id="notification-message"></p>
+</div>
+<!-- JavaScript for handling the display of pantry items -->
+<script type="module" src="pantrylist.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    /* Body styling */
+    body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image:
+    url('https://i.pinimg.com/736x/01/d7/f5/01d7f5d8866896065d5d5cfed2734eb4.jpg');
+    /*background-size: cover;*/ /* Ensures the image covers the entire background
+    */
+    background-position: center; /* Centers the image */
+    }
+    }
+    /* Dashboard container styling */
+    #dashboard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    width: 320px;
+    transition: transform 0.2s;
+    }
+    #dashboard:hover {
+    transform: translateY(-5px); /* Subtle lift effect on hover */
+    }
+    /* Header styling */
+    h1 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+    }
+    /* Button styling */
+    #dashboard button {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fcf9f9;
+    background: linear-gradient(135deg, #ec6b4b, #feb47b);/* Light blue */
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    }
+    /* Button hover effect */
+    #dashboard button:hover {
+    background: linear-gradient(135deg, #feb47b, #ff7e5f); /* Darker blue for
+    hover effect */
+    transform: scale(1.02); /* Slight enlarge effect */
+    }
+    /* Button focus effect */
+    #dashboard button:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(30, 136, 229, 0.4);
+    }
+    /* Subtle text for instructions or titles */
+    p {
+    color: #777;
+    font-size: 14px;
+    margin-top: 10px;
+    text-align: center;
+    }
+    /* Add position relative to the dashboard container */
+    /*#dashboard {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    width: 320px;
+    transition: transform 0.2s;
+    }*/
+    /* Logout button positioned in the top-right corner */
+    #logout-button {
+    position: absolute;
+    top: 10px; /* Adjust vertical position */
+    right: 10px; /* Adjust horizontal position */
+    background-color: #ff4d4d;
+    color: white;
+    font-weight: bold;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    z-index: 10; /* Ensure the button stays on top of other elements */
+    }
+    #logout-button:hover {
+    background-color: #e63939;
+    }
+    @media (max-width: 500px) {
+        #dashboard {
+        width: 85%;
+        padding: 20px;
+        }
+    }
+        

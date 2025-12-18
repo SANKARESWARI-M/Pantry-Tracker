@@ -1,0 +1,133 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+    /* General Body Styling */
+    body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 20px;
+    color: #333;
+    background-image: url('https://img.freepik.com/free-photo/top-view-tastycooked-vegetables-sauce-meal-with-tomatoes-seasonings-dark-background-sauce-mealdish-food_140725-86232.jpg?semt=ais_hybrid');
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
+    h1{
+    text-align: center;
+    }
+    #recipe{
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    max-width: 900px;
+    margin: 0 auto;
+    }
+    /* Header Styling */
+    h2 {
+    color: #333;
+    margin-bottom: 10px;
+    }
+    /* Ingredient Selection */
+    #ingredientSelection {
+    margin: 10px 0;
+    }
+    select, input {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #333;
+    background-color: #fafafa;
+    transition: border-color 0.3s ease;
+    }
+    select:focus, input:focus {
+    border-color: #feb47b;
+    outline: none;
+    box-shadow: 0 0 5px rgba(255, 145, 77, 0.3);
+    }
+    /* Button Styling */
+    button {
+    background: linear-gradient(135deg, #ec6b4b, #feb47b);
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 30%;
+    transition: background-color 0.3s ease;
+    font-weight: bold;
+    }
+    #back{
+    width: 10%;
+    }
+    button:hover {
+    background: linear-gradient(135deg, #feb47b, #ec6b4b);
+    }
+    /* Recipe List Styling
+    #recipeList {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    margin-top: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    #recipeList h3 {
+    font-size: 20px;
+    color: #333;
+    }
+    #recipeList p {
+    font-size: 16px;
+    color: #555;
+    }*/
+    /* Styling for Ingredient Checkboxes */
+    #ingredientSelection {
+    display: flex;
+    flex-direction: column; /* Stack each checkbox-item pair vertically */
+    gap: 5px; /* Space between each checkbox-item pair */
+    }
+    #ingredientSelection div {
+    display: flex; /* Display checkbox and label in a row */
+    align-items: center; /* Vertically align checkbox and label */
+    }
+    #ingredientSelection input[type="checkbox"] {
+    margin: 0; /* Remove any unwanted margin */
+    vertical-align: middle; /* Align checkbox with label */
+    }
+    #ingredientSelection label {
+    font-size: 16px;
+    color: #0f0f0f;
+    margin-left: 10px; /* Space between checkbox and label */
+    vertical-align: middle; /* Align label with checkbox */
+    }
+    /* Make the layout responsive */
+    @media (max-width: 768px) {
+    body {
+    margin: 10px;
+    }
+    #ingredientSelection, select, input, button {
+    width: 100%;
+    }
+    }
+    body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    }
+    h2 {
+    color: #333;
+    margin-bottom: 10px;
+    }
+    ul, ol {
+    margin-left: 20px;
+    }
+    li {
+    margin-bottom: 5px;
+    }
+    p {
+        margin-bottom: 10px;
+        }

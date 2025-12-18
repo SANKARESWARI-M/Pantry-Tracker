@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dashboard</title>
+<link rel="stylesheet" href="dashboard.css"> <!-- Ensure the correct path
+here -->
+</head>
+<body>
+<button id="logout-button">Logout</button>
+<div id="dashboard">
+<!-- Unified navigation buttons with event listeners calling the
+navigateTo function -->
+<button onclick="navigateTo('pantrylist.html')">My Pantry</button>
+<button onclick="navigateTo('shoppingList.html')">Shopping List</button>
+<button onclick="navigateTo('recipe.html')">Recipe Suggestions</button>
+</div>
+<script type="module" src="dashboard.js" defer></script>
+<script>
+function navigateTo(page) {
+window.location.href = page; // Navigate to the specified page
+}
+</script>
+</body>
+</html>

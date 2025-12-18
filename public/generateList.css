@@ -1,0 +1,113 @@
+/* Basic styling for the body */
+body {
+    font-family: Arial, sans-serif;
+    background-image:
+    url('https://t3.ftcdn.net/jpg/10/13/75/36/360_F_1013753673_NlNSu0OeJthyprT4ufJGKxaE5CY9isNl.jpg');
+    background-size: cover;
+    /*background-repeat: no-repeat;*/
+    background-color: #c5e6e7;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    }
+    #generate {
+    background-color: #fff;
+    padding: 50px; /* Increase padding for more space inside */
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    max-width: 1000px; /* Set a maximum width to control the overall size */
+    width: 90%; /* Set a width percentage to ensure it scales well */
+    margin: 30px auto;
+    box-sizing: border-box; /* Ensure padding doesn't increase the element's
+    size beyond its max-width */
+    }
+    /* Header styling */
+    h1 {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 20px;
+    }
+    .button-container {
+    display: flex;
+    align-items: center; /* Align buttons vertically in the center */
+    justify-content: flex-start; /* Align buttons to the left (you can use
+    'center' if you want them centered) */
+    gap: 10px; /* Adjust the space between the buttons */
+    }
+    /* Button styling */
+    button {
+    background: linear-gradient(135deg, #ec6b4b, #feb47b);
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    margin: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    }
+    button:hover {
+    background: linear-gradient(135deg, #feb47b, #ff7e5f);
+    }
+    #back {
+    background-color: #f44336;
+    }
+    #back:hover {
+    background-color: #e53935;
+    }
+    /* Table styling */
+    table {
+    width: 80%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: rgb(197, 191, 191);
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    /* Table header styling */
+    thead {
+    background: linear-gradient(135deg, #ec6b4b, #feb47b);
+    }
+    th {
+    padding: 12px;
+    text-align: left;
+    font-size: 18px;
+    color: #faf5f5;
+    border-bottom: 2px solid #ddd;
+    }
+    /* Table row styling */
+    tbody tr {
+    background-color: #fff;
+    border-bottom: 1px solid #f4f4f4;
+    }
+    tbody td {
+    padding: 12px;
+    text-align: left;
+    font-size: 16px;
+    color: #555;
+    }
+    tbody tr:hover {
+    background-color: #f9f9f9;
+    }
+    /* Table empty state message */
+    tbody td[colspan="2"] {
+    text-align: center;
+    color: #999;
+    font-style: italic;
+    }
+    /* Responsive Design */
+    @media (max-width: 768px) {
+    table {
+    width: 100%;
+    }
+    button {
+    font-size: 14px;
+    padding: 8px 16px;
+    }
+    h1 {
+    font-size: 1.5em;
+    }
+    }
